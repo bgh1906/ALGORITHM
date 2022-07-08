@@ -50,7 +50,6 @@ public class 백준_220706_24479_깊이우선탐색1 {
 			if(visited[l.get(i)]==0) {
 				dfs(l.get(i));
 			}
-			--count;
 		}
 	}
 	
