@@ -6,7 +6,6 @@ public class 백준_220706_24479_깊이우선탐색1 {
 	private static List<Integer>[] list;
 	private static int[] visited;
 	private static int count;
-	private static int answer =0;
 
 	public static void main(String[] args) throws IOException {
 		StringTokenizer st;
