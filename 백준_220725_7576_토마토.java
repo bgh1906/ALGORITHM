@@ -56,6 +56,7 @@ public class 백준_220725_7576_토마토 {
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
                 if (map[i][j] == 0) {
+                    //큐가 끝난이후에도 익지않은 토마토가 있는경우 -1
                     System.out.println(-1);
                     return;
                 }
@@ -78,4 +79,4 @@ class Pair {
 }
 
 //https://www.acmicpc.net/problem/7576
-//bfs사용
+//bfs사용 : 한번에 여러토마토가 익기때문에 dfs로 풀이 불가
