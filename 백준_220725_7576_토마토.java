@@ -27,7 +27,7 @@ public class 백준_220725_7576_토마토 {
     }
  
     public static void BFS(int map[][], int N, int M) {
-        Queue<Pair> q = new LinkedList<Pair>();
+        Queue<Pair> q = new LinkedList<>();
  
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
