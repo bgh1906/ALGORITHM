@@ -27,20 +27,20 @@ public class 백준_220725_7576_토마토 {
     }
  
     public static void BFS(int map[][], int N, int M) {
-        Queue<Pair> q = new LinkedList<>();
+        Queue<TMT7576Pair> q = new LinkedList<>();
  
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
                 if (map[i][j] == 1)
-                    q.add(new Pair(i, j));
+                    q.add(new TMT7576Pair(i, j));
             }
         }
  
         while (!q.isEmpty()) {
-            Pair pair = q.poll();
+            TMT7576Pair TMT7569Pair = q.poll();
             for (int i = 0; i < 4; i++) {
-                int nextX = pair.x + dx[i];
-                int nextY = pair.y + dy[i];
+                int nextX = TMT7569Pair.x + dx[i];
+                int nextY = TMT7569Pair.y + dy[i];
  
                 if (nextX < 0 || nextY < 0 || nextX >= N || nextY >= M) {
                     continue;
@@ -48,8 +48,8 @@ public class 백준_220725_7576_토마토 {
                 if (map[nextX][nextY] != 0) {
                     continue;
                 }
-                map[nextX][nextY] = map[pair.x][pair.y] + 1;
-                q.add(new Pair(nextX, nextY));
+                map[nextX][nextY] = map[TMT7569Pair.x][TMT7569Pair.y] + 1;
+                q.add(new TMT7576Pair(nextX, nextY));
             }
         }
         int max = 0;
@@ -68,11 +68,11 @@ public class 백준_220725_7576_토마토 {
     }
 }
 
-class Pair {
+class TMT7576Pair {
     int x;
     int y;
 
-    Pair(int x, int y) {
+    TMT7576Pair(int x, int y) {
         this.x = x;
         this.y = y;
     }
