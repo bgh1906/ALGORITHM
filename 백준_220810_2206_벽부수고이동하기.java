@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-
 public class 백준_220810_2206_벽부수고이동하기 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
