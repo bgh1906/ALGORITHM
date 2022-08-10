@@ -13,9 +13,9 @@ public class 백준_220728_7562_나이트의이동 {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     
-        int T = Integer.parseInt(br.readLine());
+        int TC = Integer.parseInt(br.readLine());
         
-        for(int i = 0; i < T; i++) {
+        for(int i = 0; i < TC; i++) {
             N = Integer.parseInt(br.readLine());
             map = new int[N][N];
             visited = new boolean[N][N];
@@ -50,8 +50,7 @@ public class 백준_220728_7562_나이트의이동 {
             if(x1 == end_x && y1 == end_y) {
                 break;
             }
-            
- 
+
             for(int i = 0; i < dx.length; i++) {
                 int x2 = x1 + dx[i];
                 int y2 = y1 + dy[i];
@@ -77,3 +76,8 @@ class KnightLocation {
         this.y = y;
     }
 }
+
+//https://www.acmicpc.net/problem/7562
+//BFS
+//최단경로문제
+//체스판을 벗어난 경우거나, 방문했다면 제외
