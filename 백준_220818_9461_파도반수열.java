@@ -1,11 +1,9 @@
 import java.io.*;
  
 public class 백준_220818_9461_파도반수열 {
-	
 	public static Long[] seq = new Long[101];
  
 	public static void main(String[] args) throws IOException {
-		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		
@@ -28,5 +26,4 @@ public class 백준_220818_9461_파도반수열 {
 		}
 		return seq[N];
 	}
- 
 }
