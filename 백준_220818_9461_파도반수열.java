@@ -15,14 +15,14 @@ public class 백준_220818_9461_파도반수열 {
 		int T = Integer.parseInt(br.readLine());
 		
 		while(T-->0) {
-			sb.append(padovan(Integer.parseInt(br.readLine()))).append('\n');
+			sb.append(Padovan(Integer.parseInt(br.readLine()))).append('\n');
 		}
 		System.out.println(sb);
 	}
 	
-	public static long padovan(int N) {
+	public static long Padovan(int N) {
 		if(seq[N] == null) {
-			seq[N] = padovan(N - 2) + padovan(N - 3);
+			seq[N] = Padovan(N - 2) + Padovan(N - 3);
 		}
 		return seq[N];
 	}
