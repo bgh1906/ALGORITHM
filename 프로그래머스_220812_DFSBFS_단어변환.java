@@ -1,11 +1,4 @@
 public class 프로그래머스_220812_DFSBFS_단어변환 {
-	public static void main(String[] args) {
-		String a = "hit";
-		String b = "cog";
-		String[] c = { "hot", "dot", "dog", "lot", "log", "cog" };
-		System.out.println(solution(a, b, c));
-	}
-
 	static int answer = 51;// 최대 50글자
 
 	public static int solution(String begin, String target, String[] words) {
