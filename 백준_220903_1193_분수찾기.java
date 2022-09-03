@@ -1,7 +1,6 @@
 import java.io.*;
 
 public class 백준_220903_1193_분수찾기 {
- 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int X = Integer.parseInt(br.readLine());
