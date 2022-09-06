@@ -2,9 +2,8 @@ import java.io.*;
 import java.util.*;
 
 public class 백준_220803_10866_덱 {
- 
+
 	public static void main(String[] args) throws IOException {
-		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		
