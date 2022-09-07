@@ -24,3 +24,5 @@ public class 백준_220906_10250_ACM호텔 {
  
 	}
 }
+
+//https://www.acmicpc.net/problem/10250
