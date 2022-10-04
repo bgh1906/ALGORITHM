@@ -33,9 +33,9 @@ public class 백준_221004_14889_스타트와링크 {
  
 		for (int i = idx; i < N; i++) {
 			if (!visit[i]) {
-				visit[i] = true;	// 방문으로 변경
-				combi(i + 1, count + 1);	// 재귀 호출
-				visit[i] = false;	// 재귀가 끝나면 비방문으로 변경
+				visit[i] = true;
+				combi(i + 1, count + 1);
+				visit[i] = false;
 			}
 		}
 	}
