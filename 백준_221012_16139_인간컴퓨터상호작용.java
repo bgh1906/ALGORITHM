@@ -20,6 +20,7 @@ public class 백준_221012_16139_인간컴퓨터상호작용 {
 				arr[i][j] = j == idx ? before + 1 : before;
 			}
 		}
+
 		StringTokenizer st;
 		for (int i = 0; i < q; i++) {
 			st = new StringTokenizer(br.readLine());
